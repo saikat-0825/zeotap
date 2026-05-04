@@ -4,7 +4,7 @@
 This is a highly resilient, asynchronous Incident Management System designed to monitor a complex distributed stack. It is built to handle high-throughput error signals, manage failure mediation workflows using robust design patterns (State and Strategy), and provide a real-time, zero-reload dashboard for Site Reliability Engineers (SREs).
 
 ## Architecture
-*(Insert architecture diagram here: docs/architecture.png)*
+![IMS Architecture Diagram](docs/architecture.png)
 
 The system separates concerns into distinct layers:
 1. **The Producer (FastAPI):** Ingests signals and offloads them immediately.
