@@ -49,7 +49,7 @@ This project is fully containerized. Ensure you have Docker and Docker Compose i
 
    Go into your code (backend/templates/rca_modal.html) and update the hx-post URL in the form to match that ID:
 
-   HTML
+   
    <form hx-post="/api/incident/INC-A1B2C3/close" ...>
    Save the file. (FastAPI will auto-reload).
 
