@@ -1,0 +1,14 @@
+{% for incident in incidents %}
+<tr class="border-b border-gray-700 hover:bg-gray-700">
+    <td class="py-3 font-mono text-blue-300">{{ incident.id }}</td>
+    <td class="py-3">{{ incident.component_id }}</td>
+    <td class="py-3">
+        <span class="px-2 py-1 rounded text-xs {% if incident.severity == 'P0' %}bg-red-900 text-red-200{% else %}bg-yellow-900 text-yellow-200{% endif %}">
+            {{ incident.severity }}
+        </span>
+    </td>
+    <td class="py-3">{{ incident.state }}</td>
+</tr>
+{% else %}
+<tr><td colspan="4" class="py-4 text-gray-500">All systems operational. No active incidents.</td></tr>
+{% endfor %}

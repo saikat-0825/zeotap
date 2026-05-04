@@ -1,0 +1,19 @@
+<form hx-post="/api/incident/INC-DEMO/close" hx-target="#rca-result" class="space-y-4 text-sm">
+    <p class="text-xs text-gray-500 mb-4">Note: Enter a valid active Incident ID from the table above into the URL path in the code to close a specific incident.</p>
+    <div>
+        <label class="block text-gray-400 mb-1">Root Cause Category</label>
+        <select name="root_cause_category" required class="w-full bg-gray-700 rounded p-2 text-white">
+            <option value="">Select...</option>
+            <option value="code_bug">Code Bug</option>
+            <option value="infrastructure">Infrastructure Failure</option>
+        </select>
+    </div>
+    <div>
+        <label class="block text-gray-400 mb-1">Fix Applied</label>
+        <textarea name="fix_applied" required rows="3" class="w-full bg-gray-700 rounded p-2 text-white"></textarea>
+    </div>
+    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-500 text-white font-bold py-2 rounded">
+        Validate RCA & Close
+    </button>
+</form>
+<div id="rca-result" class="mt-4"></div>
