@@ -55,6 +55,6 @@ This project is fully containerized. Ensure you have Docker and Docker Compose i
 
    Fill out the RCA form on the dashboard and hit submit. You will see the green success message, and on the next 5-second tick, that incident will vanish from the "Active" table!
 
-6. **To Close Everything
+6. **To Close Everything**
    ```bash
    docker-compose down      
